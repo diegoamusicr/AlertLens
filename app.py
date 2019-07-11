@@ -57,5 +57,21 @@ def u_color():
 def u_other():
 	return render_template('utilities-other.html', title="Utilities Other")
 
+
+# app routes
+@app.route('/estadisticas')
+def estadisticas():
+	return render_template('estadisticas.html', title="Estadisticas")
+
+@app.route('/notificaciones')
+def notificaciones():
+	return render_template('notificaciones.html', title="Notificaciones")
+
+@app.route('/main')
+def main():
+	return render_template('main.html', title="Main")
+
+
 if __name__ == "__main__":
-	app.run()
+	app.run(debug=True, host='0.0.0.0')
+	# app.run(host='0.0.0.0')
