@@ -71,6 +71,11 @@ def notificaciones():
 def main():
 	return render_template('main.html', title="Main")
 
+@app.route('/historial')
+def historial():
+	return render_template('historial.html', title="Historial")
+
+
 
 if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0')
