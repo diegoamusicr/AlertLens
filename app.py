@@ -75,6 +75,15 @@ def main():
 def historial():
 	return render_template('historial.html', title="Historial")
 
+@app.route('/video')
+def video():
+	return render_template('video.html', title="Video")
+
+@app.route('/rostros')
+def rostros():
+	return render_template('rostros.html', title="Rostros")
+
+
 
 
 if __name__ == "__main__":

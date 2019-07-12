@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block main_content %}
-
+      
       <!-- Main Content -->
       <div id="content">
 
-          <!-- Topbar -->
+         <!-- Topbar -->
   <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
       <!-- Sidebar Toggle (Topbar) -->
@@ -132,93 +132,23 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-1 text-gray-800">Notificaciones</h1>
-          <!-- <p class="mb-4">Notificaciones del dia de hoy <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities below were created to extend this theme past the default utility classes built into Bootstrap's framework.</p> -->
+          <h1 class="h3 mb-2 text-gray-800">Estadisticas</h1>
+          <!-- <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme. The charts below have been customized - for further customization options, please visit the <a target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js documentation</a>.</p> -->
 
-
-          <!-- Border Left Utilities -->
-          <div class="col-lg-6">
-
-            <div class="card mb-4 py-3 border-left-success">
-              <div class="card-body">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm">
-                            Hoy - 8:25pm
-                          </div>
-                        <div class="col-sm">
-                          Notificacion personalizada - Jhon llego a casa
-                        </div>
-                        <div class="col-sm">
-                            <img src="/static/img/jhon.png" width="100" class="img-fluid" alt="Responsive image">
-                        </div>
-                      </div>
-                      
-                    </div>
-              </div>
+          <!-- Content Row -->
+          <div class="row">
+            <div class="col-xl-8 col-lg-7">
+                <iframe id="cartoonVideo" width="100%" height="100%" src="//www.youtube.com/embed/rCUf2siRi64?autoplay=1" frameborder="0" allowfullscreen></iframe> 
             </div>
-
-            <div class="card mb-4 py-3 border-left-info">
-                <div class="card-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                              Hoy - 8:25pm
-                            </div>
-                          <div class="col-sm">
-                            Notificacion - Movimiento en camara 1
-                          </div>
-                          <div class="col-sm">
-                              <img src="/static/img/cat.png" width="100" class="img-fluid" alt="Responsive image">
-                          </div>
-                        </div>
-                        
-                      </div>
-                </div>
-              </div>
-
-            <div class="card mb-4 py-3 border-left-warning">
-                <div class="card-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                              Hoy - 12:45pm
-                            </div>
-                          <div class="col-sm">
-                            Alerta - persona no identificada
-                          </div>
-                          <div class="col-sm">
-                              <img src="/static/img/sujeto.png" width="100" class="img-fluid" alt="Responsive image">
-                          </div>
-                        </div>
-                        
-                      </div>
-                </div>
-              </div>
-
-              <div class="card mb-4 py-3 border-left-danger">
-                  <div class="card-body">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-sm">
-                                Hoy - 12:45pm
-                              </div>
-                            <div class="col-sm">
-                              Peligro - camara3(puerta) - persona no identificada
-                            </div>
-                            <div class="col-sm">
-                                <img src="/static/img/robo.png" width="100" class="img-fluid" alt="Responsive image">
-                            </div>
-                          </div>
-                          
-                        </div>
-                  </div>
-                </div>
-
           </div>
 
-            
+          <div class="row">
+            <div class="col-xl-8 col-lg-7">
+            <canvas id="lineChart_video" width="100%" backgroundColor='#4287f5'></canvas>    
+            </div>
+          </div>
 
+  
         </div>
         <!-- /.container-fluid -->
 
