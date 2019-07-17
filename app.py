@@ -83,6 +83,11 @@ def video():
 def rostros():
 	return render_template('rostros.html', title="Rostros")
 
+@app.route('/configuraciones')
+def configuraciones():
+	return render_template('configuraciones.html', title="Configuraciones")
+
+
 
 
 
